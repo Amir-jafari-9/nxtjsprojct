@@ -18,7 +18,8 @@ jobs:
       matrix:
         node-version: [14.x, 16.x, 18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-      env: NEXT_WEBSITE_URL:${{secret.NEXT_WEBSITE_URL}}
+
+#env:   NEXT_WEBSITE_URL:${{secret.NEXT_WEBSITE_URL}}
 
     steps:
     - uses: actions/checkout@v3
