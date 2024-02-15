@@ -16,10 +16,11 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [v14.10.0]
+        node-version: [14.10.0]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
-#env:   NEXT_WEBSITE_URL:${{secret.NEXT_WEBSITE_URL}}
+    env: 
+      NEXT_WEBSITE_URL:${{secret.NEXT_WEBSITE_URL}}
 
     steps:
     - uses: actions/checkout@v3
